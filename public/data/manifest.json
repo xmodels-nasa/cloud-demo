@@ -1,0 +1,365 @@
+{
+  "width": 360,
+  "height": 180,
+  "north": 90,
+  "south": -90,
+  "west": -180,
+  "east": 180,
+  "display_resolution": 1,
+  "native_resolution": 0.25,
+  "levels": 40,
+  "threshold": 0.75,
+  "probability_scale": 254,
+  "missing_value": 255,
+  "prediction_time": "2006-06-12T12:00:00Z",
+  "prediction_file": "cloud-probabilities.bin",
+  "examples": [
+    {
+      "id": "2006_06_11_12",
+      "time": "2006-06-11T12:00:00Z",
+      "layers": [
+        {
+          "id": "temperature",
+          "label": "2 m temperature",
+          "unit": "\u00b0C",
+          "file": "2006_06_11_12-temperature.bin",
+          "range": [
+            -40,
+            40
+          ],
+          "palette": "thermal"
+        },
+        {
+          "id": "pressure",
+          "label": "Mean sea level pressure",
+          "unit": "hPa",
+          "file": "2006_06_11_12-pressure.bin",
+          "range": [
+            970,
+            1040
+          ],
+          "palette": "pressure"
+        },
+        {
+          "id": "wind",
+          "label": "10 m wind speed",
+          "unit": "m/s",
+          "file": "2006_06_11_12-wind.bin",
+          "range": [
+            0,
+            25
+          ],
+          "palette": "wind"
+        },
+        {
+          "id": "t-850",
+          "label": "Air temperature \u00b7 850 hPa",
+          "unit": "\u00b0C",
+          "file": "2006_06_11_12-t-850.bin",
+          "range": [
+            -65,
+            30
+          ],
+          "palette": "thermal"
+        },
+        {
+          "id": "q-850",
+          "label": "Specific humidity \u00b7 850 hPa",
+          "unit": "g/kg",
+          "file": "2006_06_11_12-q-850.bin",
+          "range": [
+            0,
+            15
+          ],
+          "palette": "wind"
+        },
+        {
+          "id": "t-500",
+          "label": "Air temperature \u00b7 500 hPa",
+          "unit": "\u00b0C",
+          "file": "2006_06_11_12-t-500.bin",
+          "range": [
+            -65,
+            30
+          ],
+          "palette": "thermal"
+        },
+        {
+          "id": "q-500",
+          "label": "Specific humidity \u00b7 500 hPa",
+          "unit": "g/kg",
+          "file": "2006_06_11_12-q-500.bin",
+          "range": [
+            0,
+            15
+          ],
+          "palette": "wind"
+        },
+        {
+          "id": "t-250",
+          "label": "Air temperature \u00b7 250 hPa",
+          "unit": "\u00b0C",
+          "file": "2006_06_11_12-t-250.bin",
+          "range": [
+            -65,
+            30
+          ],
+          "palette": "thermal"
+        },
+        {
+          "id": "q-250",
+          "label": "Specific humidity \u00b7 250 hPa",
+          "unit": "g/kg",
+          "file": "2006_06_11_12-q-250.bin",
+          "range": [
+            0,
+            15
+          ],
+          "palette": "wind"
+        }
+      ]
+    },
+    {
+      "id": "2006_06_12_12",
+      "time": "2006-06-12T12:00:00Z",
+      "layers": [
+        {
+          "id": "temperature",
+          "label": "2 m temperature",
+          "unit": "\u00b0C",
+          "file": "2006_06_12_12-temperature.bin",
+          "range": [
+            -40,
+            40
+          ],
+          "palette": "thermal"
+        },
+        {
+          "id": "pressure",
+          "label": "Mean sea level pressure",
+          "unit": "hPa",
+          "file": "2006_06_12_12-pressure.bin",
+          "range": [
+            970,
+            1040
+          ],
+          "palette": "pressure"
+        },
+        {
+          "id": "wind",
+          "label": "10 m wind speed",
+          "unit": "m/s",
+          "file": "2006_06_12_12-wind.bin",
+          "range": [
+            0,
+            25
+          ],
+          "palette": "wind"
+        },
+        {
+          "id": "t-850",
+          "label": "Air temperature \u00b7 850 hPa",
+          "unit": "\u00b0C",
+          "file": "2006_06_12_12-t-850.bin",
+          "range": [
+            -65,
+            30
+          ],
+          "palette": "thermal"
+        },
+        {
+          "id": "q-850",
+          "label": "Specific humidity \u00b7 850 hPa",
+          "unit": "g/kg",
+          "file": "2006_06_12_12-q-850.bin",
+          "range": [
+            0,
+            15
+          ],
+          "palette": "wind"
+        },
+        {
+          "id": "t-500",
+          "label": "Air temperature \u00b7 500 hPa",
+          "unit": "\u00b0C",
+          "file": "2006_06_12_12-t-500.bin",
+          "range": [
+            -65,
+            30
+          ],
+          "palette": "thermal"
+        },
+        {
+          "id": "q-500",
+          "label": "Specific humidity \u00b7 500 hPa",
+          "unit": "g/kg",
+          "file": "2006_06_12_12-q-500.bin",
+          "range": [
+            0,
+            15
+          ],
+          "palette": "wind"
+        },
+        {
+          "id": "t-250",
+          "label": "Air temperature \u00b7 250 hPa",
+          "unit": "\u00b0C",
+          "file": "2006_06_12_12-t-250.bin",
+          "range": [
+            -65,
+            30
+          ],
+          "palette": "thermal"
+        },
+        {
+          "id": "q-250",
+          "label": "Specific humidity \u00b7 250 hPa",
+          "unit": "g/kg",
+          "file": "2006_06_12_12-q-250.bin",
+          "range": [
+            0,
+            15
+          ],
+          "palette": "wind"
+        }
+      ]
+    },
+    {
+      "id": "2006_06_13_12",
+      "time": "2006-06-13T12:00:00Z",
+      "layers": [
+        {
+          "id": "temperature",
+          "label": "2 m temperature",
+          "unit": "\u00b0C",
+          "file": "2006_06_13_12-temperature.bin",
+          "range": [
+            -40,
+            40
+          ],
+          "palette": "thermal"
+        },
+        {
+          "id": "pressure",
+          "label": "Mean sea level pressure",
+          "unit": "hPa",
+          "file": "2006_06_13_12-pressure.bin",
+          "range": [
+            970,
+            1040
+          ],
+          "palette": "pressure"
+        },
+        {
+          "id": "wind",
+          "label": "10 m wind speed",
+          "unit": "m/s",
+          "file": "2006_06_13_12-wind.bin",
+          "range": [
+            0,
+            25
+          ],
+          "palette": "wind"
+        },
+        {
+          "id": "t-850",
+          "label": "Air temperature \u00b7 850 hPa",
+          "unit": "\u00b0C",
+          "file": "2006_06_13_12-t-850.bin",
+          "range": [
+            -65,
+            30
+          ],
+          "palette": "thermal"
+        },
+        {
+          "id": "q-850",
+          "label": "Specific humidity \u00b7 850 hPa",
+          "unit": "g/kg",
+          "file": "2006_06_13_12-q-850.bin",
+          "range": [
+            0,
+            15
+          ],
+          "palette": "wind"
+        },
+        {
+          "id": "t-500",
+          "label": "Air temperature \u00b7 500 hPa",
+          "unit": "\u00b0C",
+          "file": "2006_06_13_12-t-500.bin",
+          "range": [
+            -65,
+            30
+          ],
+          "palette": "thermal"
+        },
+        {
+          "id": "q-500",
+          "label": "Specific humidity \u00b7 500 hPa",
+          "unit": "g/kg",
+          "file": "2006_06_13_12-q-500.bin",
+          "range": [
+            0,
+            15
+          ],
+          "palette": "wind"
+        },
+        {
+          "id": "t-250",
+          "label": "Air temperature \u00b7 250 hPa",
+          "unit": "\u00b0C",
+          "file": "2006_06_13_12-t-250.bin",
+          "range": [
+            -65,
+            30
+          ],
+          "palette": "thermal"
+        },
+        {
+          "id": "q-250",
+          "label": "Specific humidity \u00b7 250 hPa",
+          "unit": "g/kg",
+          "file": "2006_06_13_12-q-250.bin",
+          "range": [
+            0,
+            15
+          ],
+          "palette": "wind"
+        }
+      ]
+    }
+  ],
+  "tracks": [
+    {
+      "id": "0",
+      "label": "March 2008 \u00b7 track 01",
+      "file": "track-0.json"
+    },
+    {
+      "id": "1",
+      "label": "March 2008 \u00b7 track 02",
+      "file": "track-1.json"
+    },
+    {
+      "id": "2",
+      "label": "March 2008 \u00b7 track 03",
+      "file": "track-2.json"
+    },
+    {
+      "id": "3",
+      "label": "March 2008 \u00b7 track 04",
+      "file": "track-3.json"
+    },
+    {
+      "id": "4",
+      "label": "March 2008 \u00b7 track 05",
+      "file": "track-4.json"
+    },
+    {
+      "id": "5",
+      "label": "March 2008 \u00b7 track 06",
+      "file": "track-5.json"
+    }
+  ]
+}

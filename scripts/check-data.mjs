@@ -1,0 +1,24 @@
+// Exercise frontend geographic lookup and cube layout without a browser.
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+import {stripTypeScriptTypes} from 'node:module';
+const source=fs.readFileSync(new URL('../src/data.ts',import.meta.url),'utf8').replace("import.meta.env.BASE_URL", "'./'");
+const code=stripTypeScriptTypes(source).replace(/export /g,'');
+const context={fetch:()=>{throw Error('Unexpected network request')},console,Uint8Array,Float32Array};
+const {profileAt,probability,cubeLayer}=vm.runInNewContext('(function(){'+code+';return {profileAt,probability,cubeLayer};})()',context);
+const manifest=JSON.parse(fs.readFileSync(new URL('../public/data/manifest.json',import.meta.url)));
+const cube={values:new Uint8Array(fs.readFileSync(new URL('../public/data/'+manifest.prediction_file,import.meta.url))),width:360,height:180,bounds:[-180,-90,180,90],quantized:true};
+const profile=profileAt(cube,24.5,-43.5);
+assert.equal(profile.length,40);
+for(let level=0;level<40;level++)assert.equal(profile[level],cube.values[level*360*180+65*360+136]/254);
+const max=cubeLayer(cube,-1);
+assert.ok(Math.abs(max[65*360+136]-Math.max(...profile))<1e-7);
+assert.equal(profileAt({...cube,bounds:[-50,20,-40,30]},0,0),null);
+assert.ok(profileAt(cube,-90,180).every(Number.isFinite));
+const missing={...cube,width:1,height:1,values:new Uint8Array(40).fill(255)};
+assert.ok(Number.isNaN(probability(missing,0,0)));
+assert.ok(Number.isNaN(cubeLayer(missing,-1)[0]));
+const native={...cube,width:2,height:2,bounds:[0,0,1,1],quantized:false,values:new Float32Array(160).fill(.375)};
+assert.ok(profileAt(native,.5,.5).every(value=>value===.375));
+console.log('Frontend data checks passed: cube order, geographic lookup, column max, edge coordinates, missing values, regional coverage, native float probabilities.');
